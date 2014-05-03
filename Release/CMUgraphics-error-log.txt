@@ -1,0 +1,2 @@
+FILE NOT FOUND: Cannot open the specified image,images\Start.png, in pngload!
+FILE NOT FOUND: Cannot open the specified image,images\Game.png, in pngload!

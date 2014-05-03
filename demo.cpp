@@ -242,12 +242,6 @@ int main()
   
         if(ctInput == LEFT_CLICK) {
 
-            for(int i=0; i<9; i++)
-            {
-                cout << i << "|" << grid[i] << "_";
-            }
-            cout << endl;
-
             // Row 1
             if(iX > 90 && iX < 196 && iY > 36 && iY < 142)
             {
@@ -374,13 +368,11 @@ int main()
 
         if(Detect() == 1 || Detect() == 2)
         {
-            cout << "Win" << endl;
             playing = false;
             bQuit = true;
         }
         else if(Detect() == 3)
         {
-            cout << "Draw" << endl;
             playing = false;
             bQuit = true;
         }
@@ -396,7 +388,7 @@ int main()
             {
                 player1 = true;
             }
-            Pause(500);
+			Pause(250);
         }
 
     } while(bQuit != true);
