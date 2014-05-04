@@ -18,6 +18,18 @@ int Detect()
         won = true;
         return 1;
     }
+    else if(grid[0] == 2 && grid[4] == 2 && grid[8] == 2)
+    {
+        // O Wins
+        won = true;
+        return 2;
+    }
+    if(grid[2] == 1 && grid[4] == 1 && grid[6] == 1)
+    {
+        // X Wins
+        won = true;
+        return 1;
+    }
     else if(grid[2] == 2 && grid[4] == 2 && grid[6] == 2)
     {
         // O Wins
@@ -388,7 +400,7 @@ int main()
             {
                 player1 = true;
             }
-			Pause(250);
+            Pause(250);
         }
 
     } while(bQuit != true);
@@ -411,7 +423,7 @@ int main()
         gameWindow.DrawImage(end3Image, 0, 0);
     }
      
-	return 0;
+    return 0;
 }
 
 void WaitNClear(window &inputWindow)
